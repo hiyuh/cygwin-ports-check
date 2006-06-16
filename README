@@ -1,0 +1,100 @@
+check
+------------------------------------------
+Check is a unit test framework for C. It features a simple interface
+for defining unit tests, putting little in the way of the
+developer. Tests are run in a separate address space, so Check can
+catch both assertion failures and code errors that cause segmentation
+faults or other signals. The output from unit tests can be used within
+source code editors and IDEs.
+
+Runtime requirements:
+  cygwin-1.5.19-4
+
+Build requirements:
+  cygwin-1.5.19-4
+  autoconf2.5-2.59-3
+  automake1.9-1.9.6-1
+  binutils-20050610-1
+  cygport-0.1.92-1
+  gawk-3.1.5-2
+  gcc-core-3.4.4-1
+  libtool1.5-1.5.22-1
+  make-3.80-1
+  sed-4.1.4-1
+
+Canonical website:
+  http://check.sourceforge.net/
+
+Canonical download:
+  http://prdownloads.sourceforge.net/check/
+
+-------------------------------------------
+
+Build instructions:
+  unpack check-0.9.2-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./check-0.9.2-X.cygport all
+
+This will create:
+  /usr/src/check-0.9.2-X-src.tar.bz2
+  /usr/src/check-0.9.2-X.tar.bz2
+
+-------------------------------------------
+
+Files included in the main package:
+
+  /usr/bin/cygcheck-0.dll
+  /usr/include/check.h
+  /usr/lib/libcheck.a
+  /usr/lib/libcheck.dll.a
+  /usr/lib/libcheck.la
+  /usr/share/aclocal/check.m4
+  /usr/share/doc/Cygwin/check-0.9.2.README
+  /usr/share/doc/check-0.9.2/AUTHORS
+  /usr/share/doc/check-0.9.2/ChangeLog
+  /usr/share/doc/check-0.9.2/ChangeLogOld
+  /usr/share/doc/check-0.9.2/COPYING
+  /usr/share/doc/check-0.9.2/examples/check_money.c
+  /usr/share/doc/check-0.9.2/examples/configure.in.money
+  /usr/share/doc/check-0.9.2/examples/Makefile.am.money
+  /usr/share/doc/check-0.9.2/examples/money.c
+  /usr/share/doc/check-0.9.2/examples/money.h
+  /usr/share/doc/check-0.9.2/html/c14.html
+  /usr/share/doc/check-0.9.2/html/c163.html
+  /usr/share/doc/check-0.9.2/html/c249.html
+  /usr/share/doc/check-0.9.2/html/c33.html
+  /usr/share/doc/check-0.9.2/html/c57.html
+  /usr/share/doc/check-0.9.2/html/index.html
+  /usr/share/doc/check-0.9.2/html/x108.html
+  /usr/share/doc/check-0.9.2/html/x115.html
+  /usr/share/doc/check-0.9.2/html/x172.html
+  /usr/share/doc/check-0.9.2/html/x183.html
+  /usr/share/doc/check-0.9.2/html/x214.html
+  /usr/share/doc/check-0.9.2/html/x220.html
+  /usr/share/doc/check-0.9.2/html/x226.html
+  /usr/share/doc/check-0.9.2/html/x232.html
+  /usr/share/doc/check-0.9.2/html/x246.html
+  /usr/share/doc/check-0.9.2/html/x68.html
+  /usr/share/doc/check-0.9.2/html/x80.html
+  /usr/share/doc/check-0.9.2/INSTALL
+  /usr/share/doc/check-0.9.2/NEWS
+  /usr/share/doc/check-0.9.2/README
+  /usr/share/doc/check-0.9.2/tutorial.sgml
+
+------------------
+
+Port Notes:
+
+----- version 0.9.2-2 -----
+Rebuilt as a libtoolized library (shared and static), so that 
+other libraries may be linked with -lcheck without problems.
+
+----- version 0.9.2-1 -----
+Version bump.
+Last official release was 0.9.1-1; 0.9.3 compiles but does not work.
+
+
+Cygwin port maintained by:
+http://cygwinports.dotsrc.org/
