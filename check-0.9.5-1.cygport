@@ -1,0 +1,5 @@
+DESCRIPTION="Unit test framework for C"
+HOMEPAGE="http://check.sourceforge.net/"
+SRC_URI="mirror://sourceforge/${PN}/${P}.tar.gz"
+
+HTMLDOCS="doc/*.html doc/*.sgml"
