@@ -1,5 +1,5 @@
 category: Devel
-requires: cygwin
+requires: cygwin libgcc1
 sdesc: "Unit test framework for C"
 ldesc: "Check is a unit test framework for C. It features a simple interface
 for defining unit tests, putting little in the way of the

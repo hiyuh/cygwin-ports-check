@@ -8,17 +8,6 @@
  doc_DATA = SVNChangeLog ChangeLog ChangeLogOld NEWS README COPYING.LESSER
  
  ## install check.m4 with AM_PATH_CHECK in it
---- origsrc/check-0.9.5/configure.ac	2006-11-21 17:19:11.000000000 -0600
-+++ src/check-0.9.5/configure.ac	2006-11-21 21:43:30.445125000 -0600
-@@ -2,7 +2,7 @@
- # Process this file with autoconf to produce a configure script.
- 
- # Prelude.
--AC_PREREQ([2.59])
-+AC_PREREQ([2.60])
- AC_INIT([Check], [0.9.5], [check-devel@lists.sourceforge.net])
- 
- # unique source file --- primitive safety check 
 --- origsrc/check-0.9.5/doc/Makefile.am	2006-11-21 17:19:13.000000000 -0600
 +++ src/check-0.9.5/doc/Makefile.am	2006-11-21 21:41:42.820125000 -0600
 @@ -106,8 +106,6 @@
@@ -30,14 +19,3 @@
  # install money example
  
  exampledir = $(docdir)/example
---- origsrc/check-0.9.5/src/Makefile.am	2006-11-21 17:19:13.000000000 -0600
-+++ src/check-0.9.5/src/Makefile.am	2006-11-21 21:30:48.208125000 -0600
-@@ -8,6 +8,8 @@
- 
- libcheck_la_LIBADD=@GCOV_LIBS@
- 
-+libcheck_la_LDFLAGS=-no-undefined
-+
- libcheck_la_SOURCES=\
- 	check.h		\
- 	check.c		\

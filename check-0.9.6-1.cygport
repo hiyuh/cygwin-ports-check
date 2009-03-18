@@ -1,5 +1,7 @@
 DESCRIPTION="Unit test framework for C"
 HOMEPAGE="http://check.sourceforge.net/"
 SRC_URI="mirror://sourceforge/${PN}/${P}.tar.gz"
+PATCH_URI="0.9.5-docdir.patch
+           0.9.6-no-undefined.patch"
 
 HTMLDOCS="doc/*.html doc/*.sgml"
