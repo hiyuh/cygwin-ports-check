@@ -8,17 +8,17 @@ faults or other signals. The output from unit tests can be used within
 source code editors and IDEs.
 
 Runtime requirements:
-  cygwin-1.7.0-43
-  libgcc1-4.3.2-2
+  cygwin-1.7.0-62
+  libgcc1-4.3.4-1
 
 Build requirements:
   autoconf2.5-2.63-10
-  automake1.10-1.10.1-10
-  binutils-20080624-2
-  cygport-0.9.6-1
-  gawk-3.1.6-2
-  gcc4-core-4.3.2-2
-  libtool-2.2.7a-1
+  automake1.10-1.10.2-10
+  binutils-2.19.51-1
+  cygport-0.9.10-1
+  gawk-3.1.7-1
+  gcc4-core-4.3.4-1
+  libtool-2.2.7a-14
   make-3.81-2
   sed-4.1.5-2
 
@@ -31,62 +31,22 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack check-0.9.6-X-src.tar.bz2
+  unpack check-0.9.8-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./check-0.9.6-X.cygport all
+  cygport ./check-0.9.8-X.cygport all
 
 This will create:
-  /usr/src/check-0.9.6-X-src.tar.bz2
-  /usr/src/check-0.9.6-X.tar.bz2
+  /usr/src/check-0.9.8-X-src.tar.bz2
+  /usr/src/check-0.9.8-X.tar.bz2
 
 -------------------------------------------
 
-Files included in the build packages:
-
-  /usr/bin/cygcheck-0.dll
-  /usr/include/check.h
-  /usr/lib/libcheck.a
-  /usr/lib/libcheck.dll.a
-  /usr/lib/libcheck.la
-  /usr/lib/pkgconfig/check.pc
-  /usr/share/aclocal/check.m4
-  /usr/share/doc/check/AUTHORS
-  /usr/share/doc/check/COPYING.LESSER
-  /usr/share/doc/check/ChangeLog
-  /usr/share/doc/check/ChangeLogOld
-  /usr/share/doc/check/NEWS
-  /usr/share/doc/check/README
-  /usr/share/doc/check/SVNChangeLog
-  /usr/share/doc/check/THANKS
-  /usr/share/doc/check/TODO
-  /usr/share/doc/check/example/Makefile.am
-  /usr/share/doc/check/example/README
-  /usr/share/doc/check/example/configure.ac
-  /usr/share/doc/check/example/src/Makefile.am
-  /usr/share/doc/check/example/src/main.c
-  /usr/share/doc/check/example/src/money.1.c
-  /usr/share/doc/check/example/src/money.1.h
-  /usr/share/doc/check/example/src/money.2.h
-  /usr/share/doc/check/example/src/money.3.c
-  /usr/share/doc/check/example/src/money.4.c
-  /usr/share/doc/check/example/src/money.5.c
-  /usr/share/doc/check/example/src/money.6.c
-  /usr/share/doc/check/example/src/money.c
-  /usr/share/doc/check/example/src/money.h
-  /usr/share/doc/check/example/tests/Makefile.am
-  /usr/share/doc/check/example/tests/check_money.1.c
-  /usr/share/doc/check/example/tests/check_money.2.c
-  /usr/share/doc/check/example/tests/check_money.3.c
-  /usr/share/doc/check/example/tests/check_money.6.c
-  /usr/share/doc/check/example/tests/check_money.7.c
-  /usr/share/doc/check/example/tests/check_money.c
-  /usr/share/info/check.info.gz
-
-------------------
-
 Port Notes:
+
+----- version 0.9.8-1 -----
+Version bump.
 
 ----- version 0.9.6-1 -----
 Initial release for Cygwin 1.7.

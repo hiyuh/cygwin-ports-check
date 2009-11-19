@@ -1,0 +1,11 @@
+DESCRIPTION="Unit test framework for C"
+HOMEPAGE="http://check.sourceforge.net/"
+SRC_URI="mirror://sourceforge/${PN}/${P}.tar.gz"
+
+# Using -ansi prevents <sys/features.h> (included by <unistd.h>) from
+# defining _POSIX_VERSION and friends which the code uses to determine
+# if POSIX APIs are available
+CYGCONF_ARGS="
+	ac_cv_cflags_warn_all_ansi=-Wall
+	ac_cv_cxxflags_warn_all_ansi=-Wall
+"
