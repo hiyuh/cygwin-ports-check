@@ -1,5 +1,5 @@
 NAME="check"
-VERSION=0.9.10
+VERSION=0.9.11
 RELEASE=1
 CATEGORY="Devel"
 SUMMARY="Unit test framework for C"
